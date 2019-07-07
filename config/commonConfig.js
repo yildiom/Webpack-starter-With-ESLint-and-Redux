@@ -32,11 +32,7 @@ module.exports = {
 				use: [
 					'style-loader',
 					{
-						loader: 'css-loader',
-						// options: {
-						// 	importLoaders: 1,
-						// 	includePaths: [resolve(__dirname, 'node_modules')]
-						// }
+						loader: 'css-loader'
 					},
 					'postcss-loader'
 				]
@@ -46,11 +42,7 @@ module.exports = {
 				use: [
 					'style-loader',
 					{
-						loader: 'css-loader',
-						// options: {
-						// 	importLoaders: 1,
-						// 	includePaths: [resolve(__dirname, 'node_modules')]
-						// }
+						loader: 'css-loader'
 					},
 					'postcss-loader',
 					{
@@ -73,7 +65,7 @@ module.exports = {
 	plugins: [
 		new HtmlWebpackPlugin({
 			inject: true,
-			template: 'index.js'
+			template: 'index.html'
 			// favicon: "assets/img/favicon"
 		}),
 		// In prod mode it will make sure that css file compiled and included

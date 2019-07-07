@@ -7,7 +7,7 @@ const { resolve } = require('path')
 module.exports = env => {
 	return merge(common, {
 		mode: 'development',
-		entry: ['webpack-dev-server/client?http://localhost:8080', 'index.js'],
+		entry: resolve(__dirname, '../src/index.js'),
 		devServer: {
 			hot: true,
 			historyApiFallback: true

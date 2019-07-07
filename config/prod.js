@@ -8,7 +8,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin')
 var { resolve } = require('path')
 
 module.exports = merge(commonConfig, {
-	entry: 'index.js',
+	entry: [resolve(__dirname, '../src/index.js')],
 	mode: 'production',
 	output: {
 		path: resolve(__dirname, '../dist'),
