@@ -23,7 +23,7 @@ module.exports = {
 				use: [{ loader: 'html-loader', options: { minimize: true } }]
 			},
 			{
-				test: /\.js$/,
+				test: /\.(js|jsx)$/,
 				use: ['babel-loader', 'source-map-loader'],
 				exclude: /node_modules/
 			},
