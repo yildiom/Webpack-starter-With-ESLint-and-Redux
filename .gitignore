@@ -1,5 +1,7 @@
 # node modules
 node_modules
+dist
+.vscode
 # yarn
 yann-lock.json
 package-lock.json

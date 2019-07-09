@@ -1,8 +1,8 @@
 {
-  "name": "webpack-config",
+  "name": "meraki-starter",
   "version": "1.0.0",
-  "description": "Webpack-config",
-  "licenses": [],
+  "description": "Meraki-starter: Config react app from scratch",
+  "licenses": ["Mustafa Alroomi"],
   "main": "index.js",
   "scripts": {
     "clean-dist": "rm -f -r -d dist",
@@ -10,13 +10,21 @@
     "start:prod": "npm run clean-dist && npm run build && webpack-dev-server",
     "start:dev": "webpack-dev-server --env dev --config=config/dev.js --open",
     "test": "jest --coverage --config=config/jest/jest.json",
-    "test:w": "jest --watch"
+    "test:w": "jest --watch",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "author": "Mustafa Alroomi",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.5.0",
     "@babel/preset-env": "^7.5.0",
+    "@storybook/addon-actions": "^5.1.9",
+    "@storybook/addon-info": "^5.1.9",
+    "@storybook/addon-knobs": "^5.1.9",
+    "@storybook/addon-links": "^5.1.9",
+    "@storybook/addons": "^5.1.9",
+    "@storybook/react": "^5.1.9",
     "babel-core": "^6.26.3",
     "babel-loader": "7",
     "babel-preset-env": "^1.7.0",
